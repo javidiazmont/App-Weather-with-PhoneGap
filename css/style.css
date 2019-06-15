@@ -1,0 +1,17 @@
+.country_1{
+  background-color: #B662C4;
+  border-radius: 15px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+  width: auto;
+  display: inline-table;
+  padding:15px;
+  margin: 10px;
+}
+
+#icon, #icon-2, #icon-3 {
+  width:70%;
+}

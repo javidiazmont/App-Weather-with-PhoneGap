@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <!--Llamadas a las librerias JS de jQuery, jQuery Mobile y a su hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.2.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.min.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mobile-1.2.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>APP Weather</title>
+</head>
+
+<body>
+    <div data-role="page" id="home"> 
+        <div data-role="header" style="text-align: center; padding:20px;"><a href="#agregar" data-theme="e" style=" margin:10px;" data-icon="plus">Añadir</a>APP Weather</div> 
+        <div data-role="content">            
+           
+            <p><h3>Ciudades:</h3></p>
+            <div>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#aranjuez">Aranjuez</a></li>
+                    <li><a href="#alcala-de-henares">Alcala de Henares</a></li>
+                    <li><a href="#valdemoro">Valdemoro</a></li>
+                    <li><a href="#madrid">Madrid</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div data-role="footer" data-theme="d" data-position="fixed"><p style="text-align: center; padding:5px;">Desarrollado por Javier Díaz Montero</p></div> 
+    </div>
+
+
+    <div data-role="page" id="aranjuez"> 
+        <div data-role="header" style="text-align: center; padding:20px;"> <a href="#home" data-theme="d" data-icon="home" style=" margin:10px;">Volver</a>APP Weather</div> 
+        <div data-role="content">
+            <center><div class="country_1">
+                <div id="city-name-2"></div>
+                <img src="" alt="" id="icon-2">
+                <div id="weather-main-2"></div>
+                <div id="weather-description-2"></div>
+                <div id="city-country-2"></div>
+                <div id="temp-2"></div>
+                <div id="humidity-2"></div>
+                <div id="wind-speed-2"></div>
+            </div></center>
+        </div>
+        <div data-role="footer" data-theme="d" data-position="fixed"><p style="text-align: center; padding:5px;">Desarrollado por Javier Díaz Montero</p></div>  
+    </div>
+
+    <div data-role="page" id="alcala-de-henares"> 
+        <div data-role="header" style="text-align: center; padding:20px;"> <a href="#home" data-theme="d" data-icon="home" style=" margin:10px;">Volver</a>APP Weather</div> 
+        <div data-role="content">
+            <center><div class="country_1">
+                <div id="city-name-3"></div>
+                <img src="" alt="" id="icon-3">
+                <div id="weather-main-3"></div>
+                <div id="weather-description-3"></div>
+                <div id="city-country-3"></div>
+                <div id="temp-3"></div>
+                <div id="humidity-3"></div>
+                <div id="wind-speed-3"></div>
+            </div></center>
+        </div>
+        <div data-role="footer" data-theme="d" data-position="fixed"><p style="text-align: center; padding:5px;">Desarrollado por Javier Díaz Montero</p></div>  
+    </div>
+
+    <div data-role="page" id="valdemoro"> 
+        <div data-role="header" style="text-align: center; padding:20px;"> <a href="#home" data-theme="d" data-icon="home" style=" margin:10px;">Volver</a>APP Weather</div> 
+        <div data-role="content">
+            <center><div class="country_1">
+                <div id="city-name"></div>
+                <img src="" alt="" id="icon">
+                <div id="weather-main"></div>
+                <div id="weather-description"></div>
+                <div id="city-country"></div>
+                <div id="temp"></div>
+                <div id="humidity"></div>
+                <div id="wind-speed"></div>
+            </div></center>
+        </div>
+        <div data-role="footer" data-theme="d" data-position="fixed"><p style="text-align: center; padding:5px;">Desarrollado por Javier Díaz Montero</p></div>  
+    </div>
+
+    <div data-role="page" id="madrid"> 
+        <div data-role="header" style="text-align: center; padding:20px;"> <a href="#home" data-theme="d" data-icon="home" style=" margin:10px;">Volver</a>APP Weather</div> 
+        <div data-role="content">
+            <center><div class="country_1">
+                <div id="city-name-4"></div>
+                <img src="" alt="" id="icon-4">
+                <div id="weather-main-4"></div>
+                <div id="weather-description-4"></div>
+                <div id="city-country-4"></div>
+                <div id="temp-4"></div>
+                <div id="humidity-4"></div>
+                <div id="wind-speed-4"></div>
+            </div></center>
+        </div>
+        <div data-role="footer" data-theme="d" data-position="fixed"><p style="text-align: center; padding:5px;">Desarrollado por Javier Díaz Montero</p></div>  
+    </div>
+
+
+    <div data-role="page" id="agregar"> 
+        <div data-role="header" style="text-align: center; padding:20px;"> <a href="#home" data-theme="d" data-icon="home" style=" margin:10px;">Volver</a>APP Weather</div> 
+        <div data-role="content">
+            
+            <input type="text" placeholder="Realice su búsqueda ..." id="search-txt">
+            <a id="search-btn" href="#" data-role="button" data-theme="b"><i class="fas fa-search"></i></a>           
+            <div id="content-box"></div>
+        </div>
+        <div data-role="footer" data-theme="d" data-position="fixed"><p style="text-align: center; padding:5px;">Desarrollado por Javier Díaz Montero</p></div>  
+    </div>
+
+    <script src="js/all.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
